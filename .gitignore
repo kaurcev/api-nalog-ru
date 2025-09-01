@@ -1,0 +1,103 @@
+### ОС и редакторы ###
+.DS_Store
+*.swp
+*~
+~$*
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+### Node.js ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp*
+.pnp.js
+
+### Зависимости ###
+jspm_packages/
+.webpack/
+.cache/
+
+### Локальные переменные окружения ###
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+### Билды ###
+dist/
+build/
+out/
+.next/
+.serverless/
+.turbo
+
+### Тесты и покрытие ###
+coverage/
+.nyc_output/
+*.lcov
+jest*.config.js
+
+### Логи ###
+*.log
+logs/
+*.logs
+
+### React ###
+.craco/
+.eslintcache
+*.css.map
+*.js.map
+
+### Node.js специфика ###
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+### Бэкенд ###
+# Для базы данных (если используется)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Для сессий
+session-store/
+
+### Фронтенд ###
+.eslintrc
+.prettierrc
+.tmp/
+.parcel-cache/
+
+### Docker ###
+docker-compose*.yml
+.dockerignore
+Dockerfile
+docker-compose.override.yml
+
+### CI/CD ###
+.github/
+.gitlab-ci.yml
+.bitbucket-pipelines.yml
+.azure-pipelines/
+
+### Документация ###
+docs/_build/
+site/
+
+### Исключения (не игнорировать) ###
+!.gitkeep
+!.dockerignore
+!.env.example
+!.env.sample
+
+backend/public

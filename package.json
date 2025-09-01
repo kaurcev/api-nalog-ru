@@ -1,16 +1,14 @@
 {
-  "name": "api.nalog.ru",
+  "name": "api-nalog-ru",
   "version": "1.0.0",
   "workspaces": [
     "frontend",
     "backend"
   ],
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:f": "cd ./frontend && npm run start",
+    "start:b": "cd ./backend && npm run start"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Alexsandr Kaurcev",
   "license": "ISC"
 }

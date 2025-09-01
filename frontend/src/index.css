@@ -1,6 +1,220 @@
+@font-face {
+    font-family: 'Golos';
+    src: url('./fonts/Golos-Text_Regular.woff2') format('woff2')
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+* {
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    user-select: none;
+    /* Запретить выделение текста */
+    -webkit-user-select: none;
+    /* Для Safari */
+    -moz-user-select: none;
+    /* Для Firefox */
+    -ms-user-select: none;
+    /* Для Internet Explorer и Edge */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    text-decoration: none;
+    font-family: "Golos", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: background-color 0.1s ease-in-out, color 0.05s ease-in-out;
+    scrollbar-color: var(--akcent) var(--bg-pan);
+    outline: none;
+}
+
+html,
 body {
-  margin: 0;
-  padding: 10px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #f2f4f8;
+    margin: 0px;
+}
+
+main * {
+    animation: fadeIn .3s ease-in-out forwards;
+    transition: background-color .1s ease-in-out, color .05s ease-in-out;
+}
+
+main {
+    min-height: 75dvh;
+    padding: 10px;
+}
+
+header {
+    background-color: #02135e;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 10px 0 #3A529B0e;
+}
+
+header a {
+    color: #fff;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header .header .plogo {
+    display: flex;
+    flex-direction: column;
+}
+
+header .header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer {
+    padding: 10px;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+input,
+select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #f2f4f8;
+    border: 1px solid #f2f4f8;
+}
+
+button {
+    background-color: #02135e;
+    border: 1px solid #02135e;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.company {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 #3A529B0e;
+}
+
+.company .details {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detail-row {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.detail-row .label {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 #3A529B0e;
+}
+
+.search input {
+    width: 100%;
+}
+
+
+.mini {
+    font-size: 0.7rem;
+}
+
+.nomarg {
+    margin: 0px;
+}
+
+h1.nomarg {
+    margin: 10px 0px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+pre {
+    font-family: monospace;
+    background-color: #efefef;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.loading{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+
+table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
 }
